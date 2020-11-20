@@ -38,7 +38,6 @@ class Navegador : Fragment() {
                     findNavController().navigate(R.id.action_navegador_to_principal)
                 }
 
-                // in here you can do logic when backPress is clicked
             }
         })
 
@@ -51,10 +50,6 @@ class Navegador : Fragment() {
 
         return inflater.inflate(R.layout.fragment_navegador, container, false)
 
-    }
-
-    fun clickback (view: View){
-        findNavController().navigate(R.id.action_navegador_to_principal)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
