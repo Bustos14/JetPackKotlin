@@ -25,7 +25,7 @@ class Division : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
-            val resultado = SumaArgs.fromBundle(it).Resultado;
+            val resultado = DivisionArgs.fromBundle(it).Resultado;
             tv_res.setText("La division es " + resultado.toString())
         }
     }
