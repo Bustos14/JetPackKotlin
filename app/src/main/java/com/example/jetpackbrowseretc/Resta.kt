@@ -23,7 +23,7 @@ class Resta : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
-            val resultado = SumaArgs.fromBundle(it).Resultado;
+            val resultado = RestaArgs.fromBundle(it).Resultado;
             tv_res.setText("La resta es " + resultado.toString())
         }
     }
